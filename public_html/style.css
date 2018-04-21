@@ -1,0 +1,93 @@
+/*.synopsis{
+    margin-left: 25px;
+}*/
+
+img{
+    width: auto !important;
+    height: 270px !important;
+}
+h2{
+    text-align: center;
+    color: white !important;
+}
+h3{
+    color: white;
+}
+
+h4{
+    
+    text-align: center;
+    color: white !important;
+}
+.card-text{
+    color: black !important;
+}
+/*button{
+    height: 30px;
+    width: 50px;
+}*/
+.back{
+    background-color: #6c757d !important;
+}
+body{
+    background-color: black !important;
+}
+
+.synopsis{
+    color: whitesmoke;
+}
+li{
+    margin-left: -26px;
+    color: whitesmoke;
+}
+.collapse{
+    margin-left: 0px !important;
+}
+.nav-item{
+    margin-left: 0px !important;
+}
+
+hr{
+    border-top: 1px solid white !important;
+}
+
+.ensemble{
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 10px black solid;
+    border-radius: 15px;
+    background-color: #212529;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: 1px #212529 solid;
+    background-color: #212529;
+    margin: -16px -150px;
+    padding: 20px 150px
+    
+    
+}
+.testo{
+    top: 100px;
+    left: 50px;
+    height: 300px ;
+    width: 300px;
+    position: fixed ;
+    background-color: silver ;
+    border: 2px solid #212529 ;
+}
+
+
+/*.hidden{
+    display: none;
+}*/

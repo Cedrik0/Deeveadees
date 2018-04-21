@@ -1,0 +1,78 @@
+<!doctype html>
+<html ng-app = "deeveadees">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="Stylesheet" href="style.css">
+        <link rel="Stylesheet" href="bootstrap.css">
+        <script src="angular.js" type="text/javascript"></script>
+        <script src="deeveadees.js" type="text/javascript"></script>
+        <title>Liste de DVD</title>
+    </head>
+    <body ng-controller="listeDeFilms">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Deeveadees</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Film</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Animes</a>
+                    </li>
+                    <li class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <a class="nav-link" href="backoffice.html">Admin</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Rechercher" aria-label="Search">
+          <!--
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+          -->
+                </form>
+            </div>
+        </nav>
+        <main role="main">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3">Deeveadees</h1>
+                    <p>Le meilleur site de Dayvayday del mundo!</p>
+                </div>
+                
+            </div>
+        
+        
+        
+        
+        <div class="container">
+            <div class="row" id="content">
+                <div ng-repeat="film in films" class="ensemble col-lg-3 col-md-4 col-sm-12">
+                    <h4 id="titre" class="title">{{film.titre}}</h4>
+                    <img class="mr3" id ="jaquette" src="{{film.jaquette}}" ng-click="detail(film.id)">
+                    <p id="description"></p>
+                </div>
+          </div>
+        </div>
+        <div ng-show="modalShower" class="testo">
+            <div ng-click="hideModal()">X</div>
+            <input ng-model="film.titre" type="text"/>
+            <textarea ng-model="film.synopsis"></textarea>
+        </div>
+        <hr>
+        </main>
+        
+        
+        <!--<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="application.js"></script>-->
+        
+    </body>
+</html>

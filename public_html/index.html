@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="Stylesheet" href="style.css">
+        <link rel="Stylesheet" href="bootstrap.css">
+        
+        <title>Liste de DVD</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Deeveadees</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Film</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Animes</a>
+                    </li>
+                    <li class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <a class="nav-link" href="backoffice.html">Admin</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Rechercher" aria-label="Search">
+          <!--
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+          -->
+                </form>
+            </div>
+        </nav>
+        <main role="main">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-3">Deeveadees</h1>
+                    <p>Le meilleur site de Dayvayday del mundo!</p>
+                </div>
+                
+            </div>
+        
+        <!--
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel__film">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+            <div id="carousel1">
+                <div class="item">
+                    <div class="item__image">
+                        <img src="/home/cedriclavery/Pictures/image_Dvd/cerf_sacré.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__image">
+                        <img src="/home/cedriclavery/Pictures/image_Dvd/cerf_sacré.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__image">
+                        <img src="/home/cedriclavery/Pictures/image_Dvd/cerf_sacré.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__image">
+                        <img src="/home/cedriclavery/Pictures/image_Dvd/cerf_sacré.jpg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__image">
+                        <img src="/home/cedriclavery/Pictures/image_Dvd/cerf_sacré.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        -->
+        
+        
+        <div class="container">
+            <div class="row" id="content">
+                
+          </div>
+        </div>
+        <div id = "film" class="hidden">
+            <h2 id="titre" class="title"></h2>
+            <img class="mr3" id ="jaquette">
+            <p id="description"></p>
+            
+        </div>
+        <hr>
+         <!-- /container -->
+        </main>
+        
+        <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="application.js"></script>
+        
+    </body>
+</html>
